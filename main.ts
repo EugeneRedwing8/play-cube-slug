@@ -3886,8 +3886,7 @@ if (!(blockSettings.exists("lv"))) {
                             fancyText.setText(myTextSprite, "ARE YOU UP TO THE TASK?")
                             timer.after(6000, function () {
                                 sprites.destroy(myTextSprite)
-                                lvl = blockSettings.readNumber("lv")
-                                start()
+                                game.reset()
                             })
                         })
                     })
